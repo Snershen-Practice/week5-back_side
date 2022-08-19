@@ -1,0 +1,36 @@
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: $gray-900;
+  display: inline-block;
+  :hover {
+    color: $default;
+  }
+}
+
+nav {
+  min-width: 296px;
+  a {
+    position: relative;
+    &:hover {
+      color: $default !important;
+    }
+  }
+  span::before {
+    content: "";
+    opacity: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $default;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  a:hover span::before {
+    opacity: 1;
+  }
+}

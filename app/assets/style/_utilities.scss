@@ -1,0 +1,116 @@
+.ps-32 {
+  padding-left: 32px;
+}
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.ms-9 {
+  margin-left: 9px;
+}
+
+.me-22 {
+  margin-right: 22px;
+}
+
+.me-50 {
+  margin-right: 50px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.my-32 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.text-default {
+  color: $default;
+}
+
+.text-gray-600 {
+  color: $gray-600;
+}
+
+.text-gray-900 {
+  color: $gray-900;
+}
+
+.bg-gray-100 {
+  background: $gray-100;
+}
+
+.fs-7 {
+  font-size: 14px;
+}
+
+.fs-9 {
+  font-size: 12px;
+}
+
+.resize {
+  min-width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.w-176 {
+  width: 176px;
+}
+
+.w-320 {
+  width: 320px;
+}
+
+.w-584 {
+  width: 584px;
+}
+
+.btn-default {
+  background-color: $default;
+  color: white;
+}
+
+.mark {
+  font-family: "Roboto Mono", monospace;
+  color: $default;
+  background-color: $gray-100;
+}
+
+// bootstrap
+.dropdown-toggle::after {
+  display: none;
+}
+
+.active {
+  background-color: $gray-100 !important;
+  color: $gray-900 !important;
+  border: solid 1px $gray-400 !important;
+}
