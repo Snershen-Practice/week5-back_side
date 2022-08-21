@@ -1,0 +1,325 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="container p-0">
+  <header class="navbar navbar-expand-lg px-32 py-32 mb-12">
+    <div class="container-fluid p-0">
+      <h1 class="fs-4 fw-bold me-50 mb-0">Admin</h1>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-gray-900 p-0"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span class="material-icons text-default me-2"> add </span>Add New
+              Admin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="d-flex">
+      <a href="#" class="d-flex align-items-center me-4"
+        ><span class="material-icons"> search </span></a
+      >
+      <a href="#" class="d-flex align-items-center"
+        ><span class="material-icons"> notifications_active </span></a
+      >
+    </div>
+  </header>
+  <div class="mx-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class="d-flex align-items-center">
+            <a href="#" class="d-flex align-items-center"
+              >ID<span class="material-icons text-default ms-2">
+                arrow_downward
+              </span>
+            </a>
+          </th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Verified</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <!-- Button trigger modal -->
+            <a
+              href="#"
+              type="button"
+              class="btn p-0 border-0 me-4"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              ><span class="material-icons"> visibility </span></a
+            >
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div
+                  class="modal-content rounded-0 d-flex flex-row p-4 flex-column"
+                >
+                  <div class="d-flex align-items-start w-100">
+                    <img
+                      src="./assets/images/emir.jpeg"
+                      alt=""
+                      class="w-141 me-24"
+                    />
+                    <div class="w-100">
+                      <div class="modal-header border-0 p-0 mb-2">
+                        <span>#1</span>
+                        <a
+                          type="button"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                          class="d-flex align-items-center"
+                        >
+                          <span class="material-icons"> close </span>
+                        </a>
+                      </div>
+                      <div>
+                        <p class="mb-0">Admin</p>
+                        <h2 class="fs-4 fw-bold">Emir Wicks</h2>
+                        <a
+                          href="mailto:emir.wicks@mail.com"
+                          class="text-gray-600 fs-7 mb-3"
+                          >emir.wicks@mail.com</a
+                        ><br />
+                        <!-- accordion start -->
+                        <div
+                          class="accordion"
+                          id="accordionPanelsStayOpenExample"
+                        >
+                          <div class="accordion-item border-0">
+                            <h2
+                              class="accordion-header bg-gray-100 mb-36"
+                              id="panelsStayOpen-headingOne "
+                            >
+                              <button
+                                class="accordion-button p-0 bg-white shadow-none"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne"
+                              >
+                                <span class="bg-gray-100 px-2 py-1 fs-7 text-gray-900"
+                                  >Verified</span
+                                >
+
+                              </button>
+                            </h2>
+                            <div
+                              id="panelsStayOpen-collapseOne"
+                              class="accordion-collapse collapse show"
+                              aria-labelledby="panelsStayOpen-headingOne"
+                            >
+                              <div class="accordion-body d-flex p-0 justify-content-between">
+                                <button type="button" class="btn btn-outline-danger me-3 px-32 py-8 rounded-1">
+                                  Mark as read
+                                </button>
+                                <button type="button" class="btn btn-default px-32 py-2 rounded-1">Reply</button>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- accordion end -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#2</th>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#3</th>
+          <td>Mahima Lopez</td>
+          <td>mahima.lopez@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#4</th>
+          <td>Pharrell Murray</td>
+          <td>pharrell.murray@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#5</th>
+          <td>Annika Mcbride</td>
+          <td>annika.mcbride@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#6</th>
+          <td>Fatimah Clark</td>
+          <td>fatimah.clark@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#7</th>
+          <td>Klaudia Rhodes</td>
+          <td>klaudia.rhodes@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#8</th>
+          <td>Tillie Lucero</td>
+          <td>tillie.lucero@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#9</th>
+          <td>Sabrina Stephenson</td>
+          <td>sabrina.stephenson@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#10</th>
+          <td>Annie Smith</td>
+          <td>annie.smith@mail.com</td>
+          <td>Yes</td>
+          <td class="d-flex justify-content-end">
+            <a href="#" class="me-4"
+              ><span class="material-icons"> visibility </span></a
+            >
+            <a href="#">
+              <span class="material-icons"> edit </span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <nav
+      aria-label="Page navigation example"
+      class="d-flex justify-content-end w-100 px-4 mt-5 mb-4"
+    >
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span class="material-icons text-default"> chevron_left </span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span class="material-icons text-default">
+              keyboard_arrow_right
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

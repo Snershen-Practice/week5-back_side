@@ -33,7 +33,7 @@ current: index
               All Courses
               <span class="material-icons text-default ms-9">
                 expand_more
-                </span>
+              </span>
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">HTML/CSS</a></li>
@@ -63,9 +63,7 @@ current: index
           aria-expanded="false"
         >
           All (4)
-          <span class="material-icons text-default ms-9">
-            expand_more
-            </span>
+          <span class="material-icons text-default ms-9"> expand_more </span>
         </button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Newest</a></li>
@@ -178,7 +176,7 @@ current: index
             <small class="fs-9 mb-3 d-block text-gray-600"
               >10:38 AM (4 hours ago)</small
             >
-            <div class="content border-bottom">
+            <div class="content">
               <p class="lh-base fs-7 mb-3">
                 Hi Teacher, the attached file is my homework of chapter 2. And
                 here comes a question: Why in the following code the height of
@@ -199,66 +197,13 @@ current: index
             </div>
           </div>
         </div>
-        <!-- 文章2 -->
-        <div
-          href="#"
-          class="d-flex justify-content-center align-items-center p-3"
-        >
-          <img
-            src="./assets/images/andychen.jpeg"
-            alt=""
-            class="resize rounded-circle me-3 align-self-start"
-          />
-          <div>
-            <div class="d-flex mb-3 justify-content-between align-items-center">
-              <div>
-                  <h3 class="fw-bold fs-6 mb-1">Andy Chen</h3>
-                  <small class="fs-9 d-block text-gray-600"
-                    >13:24 AM (1 hours ago)</small
-                  >
-              </div>
-              <div class="material-icons d-flex align-items-center">
-                <a href="#">
-                  <span class="me-4">
-                    star_border
-                  </span>
-                </a>
-                <a href="#">
-                  <span class="material-icons">
-                    edit
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="content">
-              <p class="lh-base fs-7 mb-3">
-                Hi David, by default, an image is rendered inline, like a letter
-                so it sits on the same line that a, b, c and d sit on. There is
-                space below that line for the descenders you find on letters
-                like g, j, p and q. <br /><br />You can:<br />
-                <ul class="fs-7">
-                  <li>adjust the <span class="mark">vertical-align</span> of the image to position it
-                    elsewhere (e.g. the <span class="mark">middle</span> ) or</li>
-                  <li>change the  <span class="mark">display</span> so
-                    it isn’t inline.</li>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- 按鈕 -->
-      <div class="d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-          <a href="#" class="d-flex align-items-center me-22"
-            ><span class="material-icons"> chevron_left </span></a
-          >
-          <a href="#" class="d-flex align-items-center"><span class="material-icons"> navigate_next </span> </a>
-        </div>
-        <div>
-          <a type="button" class="btn btn-outline-default me-3 px-32 rounded-0">
-            Mark as read
+        <!-- 編輯器 -->
+        <div id="editor"></div>
+        <div class="d-flex justify-content-end mb-2 me-24">
+          <a type="button" class="btn btn-outline-default me-2 px-32 rounded-0">
+            Cancel
           </a>
-          <a type="button" href="editor.html" class="btn btn-default px-32 rounded-0">Reply</a>
+          <a type="button" class="btn btn-default px-32 rounded-0"> Reply </a>
         </div>
       </div>
     </div>

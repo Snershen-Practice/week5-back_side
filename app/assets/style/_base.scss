@@ -8,8 +8,12 @@ a {
   color: $gray-900;
   display: inline-block;
   :hover {
-    color: $default;
+    color: $default !important;
   }
+}
+
+img {
+  object-fit: cover;
 }
 
 nav {
@@ -34,3 +38,47 @@ nav {
     opacity: 1;
   }
 }
+
+table {
+  th,
+  td {
+    padding-top: 19px !important;
+    padding-bottom: 17px !important;
+  }
+  tr:hover {
+    background-color: $gray-100;
+  }
+  thead {
+    border-bottom: 1px solid $gray-900;
+    th,
+    td {
+      border: none;
+      padding-top: 0 !important;
+      padding-bottom: 4px !important;
+    }
+    tr:hover {
+      background: none;
+    }
+  }
+}
+
+.page-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray-900;
+  overflow: hidden;
+  &:hover {
+    background-color: $default;
+    color: white !important;
+  }
+  &:hover span {
+    color: white !important;
+  }
+}
+
+// * {
+//   outline: solid 1px;
+// }
