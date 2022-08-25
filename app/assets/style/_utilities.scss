@@ -6,6 +6,10 @@
   padding-left: 32px;
 }
 
+.pt-32 {
+  padding-top: 32px;
+}
+
 .px-12 {
   padding-left: 12px;
   padding-right: 12px;
@@ -129,36 +133,16 @@
   }
 }
 
-.mark {
+.code {
   font-family: "Roboto Mono", monospace;
   color: $default;
   background-color: $gray-100;
 }
 
-// bootstrap
-.dropdown-toggle::after {
-  display: none;
+.rounded-1 {
+  border-radius: 2px;
 }
 
-.active {
-  background-color: $gray-100 !important;
-  color: $gray-900 !important;
-  border: solid 1px $gray-400 !important;
-}
-
-.ck-editor__editable[role="textbox"] {
-  /* editing area */
-  min-height: 319px;
-  border: 0;
-}
-
-.ck-toolbar {
-  border: 0 !important;
-  border-top: solid 1px $gray-400 !important;
-  border-bottom: solid 1px $gray-400 !important;
-}
-
-.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
-  border: 0;
-  box-shadow: none;
+.border-gray-400 {
+  border: 1px solid $gray-400;
 }

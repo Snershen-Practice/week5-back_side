@@ -39,6 +39,12 @@ nav {
   }
 }
 
+.nav_active {
+  span::before {
+    opacity: 1;
+  }
+}
+
 table {
   th,
   td {

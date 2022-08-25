@@ -1,5 +1,5 @@
 ---
-title: 首頁
+title: 課程後台
 layout: ./app/layout.ejs
 engine: ejs
 current: index
@@ -180,8 +180,8 @@ current: index
               <p class="lh-base fs-7 mb-3">
                 Hi Teacher, the attached file is my homework of chapter 2. And
                 here comes a question: Why in the following code the height of
-                the <span class="mark">div</span> is bigger than the height of
-                the <span class="mark">img</span> ? There is a gap below the
+                the <span class="code">div</span> is bigger than the height of
+                the <span class="code">img</span> ? There is a gap below the
                 image, but it doesn’t seems to be a padding/margin.<br />
                 What is the gap or extra space below image?
               </p>
@@ -200,10 +200,15 @@ current: index
         <!-- 編輯器 -->
         <div id="editor"></div>
         <div class="d-flex justify-content-end mb-2 me-24">
-          <a type="button" class="btn btn-outline-default me-2 px-32 rounded-0">
+          <a
+            href="./index.html"
+            class="btn btn-outline-default me-2 px-32 rounded-0"
+          >
             Cancel
           </a>
-          <a type="button" class="btn btn-default px-32 rounded-0"> Reply </a>
+          <a href="./index.html" class="btn btn-default px-32 rounded-0">
+            Reply
+          </a>
         </div>
       </div>
     </div>
