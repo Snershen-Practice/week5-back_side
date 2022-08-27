@@ -16,33 +16,10 @@ img {
   object-fit: cover;
 }
 
-nav {
-  min-width: 296px;
-  a {
-    position: relative;
-    &:hover {
-      color: $default !important;
-    }
-  }
-  span::before {
-    content: "";
-    opacity: 0;
-    width: 4px;
-    height: 100%;
-    background-color: $default;
-    position: absolute;
-    top: 0;
-    left: 0px;
-  }
-  a:hover span::before {
-    opacity: 1;
-  }
-}
-
-.nav_active {
-  span::before {
-    opacity: 1;
-  }
+code {
+  font-family: "Roboto Mono", monospace;
+  color: $default;
+  background-color: $gray-100;
 }
 
 table {
@@ -67,24 +44,3 @@ table {
     }
   }
 }
-
-.page-link {
-  width: 32px;
-  height: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $gray-900;
-  overflow: hidden;
-  &:hover {
-    background-color: $default;
-    color: white !important;
-  }
-  &:hover span {
-    color: white !important;
-  }
-}
-
-// * {
-//   outline: solid 1px;
-// }

@@ -1,7 +1,3 @@
-.mb-12 {
-  margin-bottom: 12px;
-}
-
 .ps-32 {
   padding-left: 32px;
 }
@@ -50,6 +46,10 @@
   margin-bottom: 6px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .mb-24 {
   margin-bottom: 24px;
 }
@@ -83,6 +83,10 @@
   background: $gray-100;
 }
 
+.border-gray-400 {
+  border: 1px solid $gray-400;
+}
+
 .fs-7 {
   font-size: 14px;
 }
@@ -105,15 +109,6 @@
   width: 320px;
 }
 
-.w-584 {
-  width: 584px;
-}
-
-.w-141 {
-  width: 141px;
-  height: 141px;
-}
-
 .btn-default {
   background-color: $default;
   color: white;
@@ -133,16 +128,20 @@
   }
 }
 
-.code {
-  font-family: "Roboto Mono", monospace;
-  color: $default;
-  background-color: $gray-100;
-}
-
 .rounded-1 {
   border-radius: 2px;
 }
 
-.border-gray-400 {
-  border: 1px solid $gray-400;
+.dropdown-toggle::after {
+  display: none;
+}
+
+.active {
+  background-color: $gray-100 !important;
+  color: $gray-900 !important;
+  border: solid 1px $gray-400 !important;
+}
+
+.modal-content {
+  width: 480px;
 }

@@ -1,0 +1,60 @@
+nav {
+  min-width: 296px;
+  a {
+    position: relative;
+    &:hover {
+      color: $default !important;
+    }
+  }
+  span::before {
+    content: "";
+    opacity: 0;
+    width: 4px;
+    height: 100%;
+    background-color: $default;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  a:hover span::before {
+    opacity: 1;
+  }
+}
+
+.nav_active {
+  span::before {
+    opacity: 1;
+  }
+}
+
+.page-link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray-900;
+  overflow: hidden;
+  &:hover {
+    background-color: $default;
+    color: white !important;
+  }
+  &:hover span {
+    color: white !important;
+  }
+}
+
+// bootstrap
+.dropdown-toggle::after {
+  display: none;
+}
+
+.active {
+  background-color: $gray-100 !important;
+  color: $gray-900 !important;
+  border: solid 1px $gray-400 !important;
+}
+
+.modal-content {
+  width: 480px;
+}
